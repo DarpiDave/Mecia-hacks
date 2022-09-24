@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Support Web</title>
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        
+        /* Change color on hover */
+        .topnav a:hover {
+          background-color: #ddd;
+          color: black;
+        }
+        
+        </style>
+    <style>
+        * {
+            font-family: "Verdana", sans-serif;
+            -moz-box-sizing: border-box ;
+            box-sizing: border-box; 
+            letter-spacing: 0px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            scroll-behavior: smooth;
+            margin: 0;
+        }
+
+        html {
+            padding: 3rem;
+            background-image:url(https://t4.ftcdn.net/jpg/01/16/88/37/360_F_116883786_wuckft1sNw1ouQfJ6FuquZnxea3qBlxy.jpg) ;
+            color: #EFEFEF;
+        }
+
+        .conteudo {
+            display: flex;
+            width: 350px;
+            scroll-snap-type: x mandatory;
+            scroll-padding: 25px;
+            column-gap: 25px;
+        }
+
+        .card {
+            flex: 0 0 100%;
+            padding: 30px;
+            scroll-snap-align: start;
+            border-radius: 30px;
+        }
+
+        .card h1 {
+            margin-bottom: 2rem;
+        }
+
+        .card:nth-child(1) {
+            background: linear-gradient(-229deg, #00DBDE, #FC00FF);
+            position: relative;
+
+        }
+
+        .card:nth-child(2) {
+            background: linear-gradient(-229deg, #0093E9, #80D0C7);
+        }
+
+        .card:nth-child(3) {
+            background: linear-gradient(-229deg, #50d990, #d4d054);
+            position: relative;
+            
+        }
+
+        .card:nth-child(4) {
+            background: linear-gradient(-229deg, #D9AFD9, #97D9E1);
+        }
+
+        .card:nth-child(5) {
+            background: linear-gradient(-229deg, #FBAB7E, #F7CE68);
+        }
+    </style>
+    <style>
+        .box{
+            padding: 10px 50px;
+            border-radius: 5px;
+            cursor: pointer;
+            letter-spacing: 1px;
+            border: 5px soild green;
+            font-size: 1 rem ;
+            font-family: sans-serif;
+            font-weight:  bold;
+            position: relative;
+            text-transform: uppercase;
+            transition: all 0.5s;
+            display: flex;
+            align-items: center; 
+            justify-content: Center;
+            width:2rem;
+        }
+        .box:hover{
+            box-shadow: 1px 1px 0,2px 2px 0,3px 3px 0,4px 4px 0,5px 5px 0,6px 6px 0;
+            background-color: #fff;
+            color: green;
+            margin-right: 500em;
+            
+        }
+    </style>
+    <style>
+        .btn1 {
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            letter-spacing: 1px;
+            border: none;
+            font-size: 1 rem ;
+            font-family: sans-serif;
+            font-weight:  bold;
+            position: relative;
+            
+            text-transform: uppercase;
+            transition: all 0.5s;
+        }
+        .btn1:hover{
+            box-shadow: 1px 1px 0,2px 2px 0,3px 3px 0,4px 4px 0,5px 5px 0,6px 6px 0;
+            background-color: #fff;
+            color: black;
+        }
+
+        .btn2 {
+            background-color: #4CAF50; /* Green */
+             border: black;
+            color: white;
+             padding: 9px 19px;
+             text-align: center;
+             border-radius: 5px;
+             text-decoration: none;
+             display: inline-block;
+             font-size: 15px;
+             position: relative;
+             margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+
+        .btn2 {
+             background-color: white; 
+             color: black; 
+             border: 2px solid #4CAF50;
+        }
+
+        .btn2:hover {
+             background-color: #4CAF50;
+             color: white;
+        }
+        
+        .title-word {
+             animation: color-animation 4s linear infinite;
+        }
+
+        .title-word-1 {
+              --color-1: #DF8453;
+             --color-2: #3D8DAE;
+             --color-3: #E4A9A8;
+        }
+
+        .title-word-2 {
+              --color-1: #DBAD4A;
+              --color-2: #ACCFCB;
+             --color-3: #17494D;
+             --color-1: #ACCFCB;
+             --color-2: #E4A9A8;
+             --color-3: #ACCFCB;
+        }
+
+@keyframes color-animation {
+  0%    {color: var(--color-1)}
+  32%   {color: var(--color-1)}
+  33%   {color: var(--color-2)}
+  65%   {color: var(--color-2)}
+  66%   {color: var(--color-3)}
+  99%   {color: var(--color-3)}
+  100%  {color: var(--color-1)}
+}
+
+/* Here are just some visual styles. 🖌 */
+
+.container {
+  display: grid;
+  place-items: center;  
+  text-align: center;
+  height: 50vh;
+}
+
+.title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 5.5vw;
+  text-transform: uppercase;
+}
+        
+    </style>
+    
+    
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="title">
+          <span class="title-word title-word-1">The</span>
+          <span class="title-word title-word-2">First</span>
+        </h2>
+      </div>
+    
+    <br>
+    <br>
+    <br>
+
+    
+    
+    <br>
+    
+    <a  href="https://forms.gle/gptER55W2SXr9rZ49"><button class="box">Sign-up</button></a>
+
+
+    <br>
+    <br>
+    <dl>
+    <div><dt>“Medicine is my lawful wife, and literature is my mistress. When I get fed up with one, I spend the night with the other”</dt>
+        <dd>      ― Anton Chekhov</dd></div></dl>
+    <br>
+    <br>
+    <br>
+
+    <img height="500px" width="100%" src="https://thumbs.dreamstime.com/b/medicine-doctor-touching-electronic-medical-record-tablet-dna-digital-healthcare-network-connection-hologram-modern-virtual-154742526.jpg" alt="Medical">
+
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <main class="conteudo">
+        <article class="card">
+            <h1>Call a doctor</h1>
+            <br>
+            <br>
+            <a href="card.html"><button class="btn1">Click for more</button></a>
+        </article>
+
+        <article class="card">
+            <h1>Need a Ambulance?</h1>
+            <br>
+            <br>
+            <button class="btn2">Call</button></a>
+        </article>
+    
+        <article class="card">
+            <h1>First aid</h1>
+            <br>
+            <br>
+            <a href="firstaid.html"> <p></p> <button class="btn1">More</button></a>
+        </article>
+ 
+        <article class="card">
+            <h1>Emergency Helpline Contacts</h1>
+            <br>
+            <a href="emergency contact.html"><button class="btn1">Various toll free numbers</button></a>
+        </article>
+       
+    </main>
+    
+</body>
+
+</html>

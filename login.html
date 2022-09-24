@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head><title>LOGIN/SIGNUP PAGE</title>
+  <style> 
+    body {
+      background-image: url("E:\movies\Hdqwalls\lightning-nature-strom-4k-09.jpg");
+      margin: 0 15em;
+    }
+    input[type=text], input[type=textarea],input[type=email], input[type=password], input[type=number], input[type=tel],   select{
+      width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+    }
+
+    input[type=submit] {
+      width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+    }
+
+     
+  </style>
+</head>
+<body>
+<marquee><h1>You can sign up here for free</h1></marquee>
+
+
+<form action="action_page.php" method="post">
+  <div class="container">
+    <b>First Name:</b>  <input type="text" placeholder="Enter your first name">
+<br><br>
+<b>Last Name: </b>  <input type="text" placeholder="Enter your last name">
+<br>
+<br>
+<label><B>Address</b></label><br>
+<textarea rows="4" cols="115" placeholder="Enter your full address here"></textarea>
+<br><br>
+<label for="email"><b>Email:</b> </label>  
+              <input type="email" id="email" name="email" placeholder="Enter your email id"> <br><br/>
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+<br><br>
+<label for="gender"><b>Gender:</b> </label>  
+              <input type="radio" id="gender" name="gender" value="male"/>Male  
+              <input type="radio" id="gender" name="gender" value="female"/>Female
+<br><br>
+<label><b>Age</b></label>
+<input type="number" name="age" placeholder="Age (e.g. 25)" data-type="number" pattern="0-150">
+
+<br><br>
+<label><b>Phone number</b></label>
+<input type="tel" name="telephone" placeholder="Enter your mobile number" pattern="[0-9]{3} [0-9]{3} [0-9]{4}" maxlength="10" title="Ten digits code" required/>
+
+<br><br>    
+<input type="submit" value="SIGNUP">
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> <b>Remember me</b>
+    </label>
+  </div>
+<br>
+
+  <div class="container" >
+    <button ALIGN="center" type="button" class="cancelbtn">Cancel</button><br>
+    <span align="center" class="psw"><a href="#">Forgot password</a></span>
+  </div>
+</form>
+
+I'll miss you :(
+</body>
+</html>
